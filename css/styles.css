@@ -1,0 +1,169 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	color: rgb(63, 63, 63);
+	background: #f0f0f0;
+}
+
+main {
+	height: 100vh;
+	padding: 2rem;
+	box-sizing: border-box;
+	max-width: 600px;
+	margin: 0 auto;
+}
+button {
+	display: block;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	outline: none;
+	box-shadow: none;
+	color: inherit;
+}
+img {
+	opacity: 0.7;
+}
+
+.top {
+	height: 15%;
+}
+.top > button {
+	margin-left: auto;
+	border-radius: 50%;
+}
+.top > button > img {
+	width: 1rem;
+	padding: 0.2rem;
+}
+
+.middle {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 40%;
+}
+.middle img {
+	width: 1.2rem;
+}
+.middle button {
+	width: 6rem;
+	height: 2rem;
+	font-size: 1rem;
+}
+.score span:first-of-type {
+	font-size: 3rem;
+}
+.score span:last-of-type {
+	font-size: 1.5rem;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	height: 45%;
+}
+.left,
+.right {
+	width: calc(50% - 1rem);
+}
+.left {
+	--bg: #eb8181;
+}
+.right {
+	--bg: #7d9fe1;
+}
+.decrement {
+	margin: 1.5rem auto;
+	background: var(--bg);
+	width: 2.5rem;
+	height: 0.6rem;
+	border-radius: 0.3rem;
+}
+.shot-btn {
+	width: 100%;
+	font-size: 1.1rem;
+	height: calc(100% - 3.6rem);
+	background: var(--bg);
+	color: white;
+}
+
+/* Modal */
+dialog {
+	z-index: 10;
+	background: white;
+	width: 90%;
+	max-width: 600px;
+	height: 85%;
+	border: none;
+	border-radius: 0.3rem;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+dialog::backdrop {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#delete-all-btn {
+	font-size: 0.8rem;
+	opacity: 0.8;
+}
+dialog img {
+	width: 0.8rem;
+}
+.table-container {
+	width: 100%;
+	overflow: scroll;
+}
+table {
+	width: 100%;
+	text-align: left;
+	margin-top: 1rem;
+	min-width: 280px;
+	font-size: 0.9rem;
+	border-collapse: collapse;
+}
+th {
+	font-size: 0.8rem;
+	font-weight: normal;
+	opacity: 0.7;
+}
+thead tr {
+	line-height: 2rem;
+}
+tbody tr {
+	border-top: 1pt solid rgba(0, 0, 0, 0.2);
+	line-height: 3rem;
+}
+table img {
+	opacity: 1;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.25);
+}
