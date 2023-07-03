@@ -96,7 +96,7 @@
 	function createDataRow({ id, date, made, missed }) {
 		const dateObj = new Date(date)
 		const day = dateObj.getDate()
-		const month = dateObj.getMonth()
+		const month = dateObj.getMonth() + 1
 		const newRow = document.createElement('tr')
 
 		newRow.id = id
